@@ -80,7 +80,6 @@ div.header {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	
 }
 
 .destinations > div {
@@ -144,7 +143,7 @@ div.header {
 }
 
 .content2-text {
-	width: 285px;
+	width: 275px;
 	height: auto;
 }
 
@@ -209,11 +208,12 @@ input[type="submit"] {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 }
 
 .footer h5 {
 	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
 	color: #9a9a9a;
 }
 
@@ -229,8 +229,8 @@ input[type="submit"] {
 }
 
 .foot-menu h4 {
-	font-size: 15px;
-	margin-left: 45px;
+	font-size: 14px;
+	margin-left: 35px;
 	transition: all, 0.15s;
 }
 
