@@ -220,16 +220,17 @@ input[type="submit"] {
 .foot-menu {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: center;
 	flex-wrap: wrap;
-	width: 37.5%;
+	align-content: center;
 	height: auto;
 	font-family: 'Montserrat', sans-serif;
 	color: #323232;
 }
 
 .foot-menu h4 {
-	margin-right: 10px;
+	font-size: 15px;
+	margin-left: 45px;
 	transition: all, 0.15s;
 }
 
