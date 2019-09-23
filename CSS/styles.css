@@ -3,10 +3,11 @@ body {
 	grid-template-areas:
 		"header"
 		"contents"
+		"contents-2"
 		"footer";
 	
 	grid-template-columns: 100%;
-	grid-template-rows: auto auto auto;
+	grid-template-rows: auto auto auto auto;
 	margin: 0;
 	padding: 0;
 }
@@ -16,16 +17,22 @@ div.header {
 	background: #37abc8 url("../images/8309058736_7def17e39e_o (1).png");
 	background-repeat: no-repeat;
 	background-size: cover;
-	width: 100%;
+	width: inherit;
 	height: 50vw;
+	padding-left: 8%;
+	padding-right: 8%;
+	padding-top: 5%;
+}
+
+.head {
 	display: flex;
 	flex-direction: row;
-	justify-content: flex-start;
+	align-items: stretch;
+	justify-content: space-between;
+	height: 20%;
 }
 
 .logo {
-	margin-left: 8%;
-	margin-top: 50px;
 	width: 10%;
 	height: 5%;
 	display: flex;
@@ -34,14 +41,16 @@ div.header {
 	align-items: center;
 }
 
-.header h2 {
-	font-family: 'Raleway', sans-serif;
-	color: #f4f3ee;
-	padding: 10%;
+.menu-img {
+	width: 2.5%;
+	height: 15%;
 }
 
-img.logo-img {
-
+.header h2 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 100;
+	color: #f4f3ee;
+	padding: 10%;
 }
 
 .contents {
@@ -49,6 +58,7 @@ img.logo-img {
 	background-color: #eeeeee;
 	width: inherit;
 	height: auto;
+	box-shadow: 0px 5px 0px 0px #e1e0d8;
 	padding-top: 50px;
 	padding-left: 8%;
 	padding-right: 8%;
@@ -62,6 +72,7 @@ img.logo-img {
 .contents h4 {
 	color: #acacac;
 	font-family: 'Raleway', sans-serif;
+	font-weight: 100;
 	margin-bottom: 40px;
 }
 
@@ -79,6 +90,7 @@ img.logo-img {
 	padding: 0;
 	box-shadow: 0 2px 0 #e1e0d8;
 	margin-bottom: 75px;
+	transition: all, 0.15s;
 }
 
 .content-text {
@@ -100,6 +112,150 @@ img.logo-img {
 
 .content-text > h6 {
 	font-family: 'Raleway', sans-serif;
+	font-weight: 100;
 	color: #919191;
 	margin-top: -30px;
+}
+
+.contents-2 {
+	grid-area: contents-2;
+	background-color: #ffffff;
+	width: inherit;
+	height: auto;
+	box-shadow: 0px 5px 0px 0px #e1e0d8;
+	padding-left: 8%;
+	padding-right: 8%;
+	padding-top: 4%;
+	padding-bottom: 6%;
+}
+
+.contents-info {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.contents-2 h1 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 100;
+	font-size: 50px;
+	color: #323232;
+}
+
+.content2-text {
+	width: 285px;
+	height: auto;
+}
+
+.content2-text h5 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	color: #323232;
+}
+
+.content2-text h6 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 100;
+	font-size: 16px;
+	color: #9a9a9a;
+	margin-top: -15px;
+}
+
+.mailbox h5 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	color: #323232;
+	text-align: center;
+}
+
+.mail {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+input[type="text"] {
+	width: 325px;
+	height: 40px;
+	background-color: #eeeeee;
+	color: #8b8b8b;
+	border: none;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	padding-left: 15px;
+	transition: all, 0.15s;
+}
+
+input[type="submit"] {
+	width: 150px;
+	height: 42px;
+	margin-left: 2px;
+	background-color: #fd4f32;
+	color: #ffffff;
+	border: none;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	transition: all, 0.15s;
+}
+
+.footer {
+	grid-area: footer;
+	background-color: #eeeeee;
+	width: inherit;
+	height: auto;
+	padding-left: 8%;
+	padding-right: 8%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.footer h5 {
+	font-family: 'Raleway', sans-serif;
+	color: #9a9a9a;
+}
+
+.foot-menu {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 37.5%;
+	height: auto;
+	font-family: 'Montserrat', sans-serif;
+	color: #323232;
+}
+
+.foot-menu h4 {
+	margin-right: 10px;
+	transition: all, 0.15s;
+}
+
+
+
+.destinations > div:hover {
+	box-shadow: 0px 0px 0px 10px #e1e0d8;
+}
+
+.destinations > div:active {
+	box-shadow: 0px 0px 0px 15px #ffffff;
+}
+
+input[type="text"]:focus {
+	outline: 1px solid #e1e0d8;
+}
+
+input[type="submit"]:hover {
+	box-shadow: 0px 0px 0px 5px #e1e0d8;
+}
+
+input[type="submit"]:active {
+	outline: none;
+	box-shadow: 0px 0px 0px 2px #eeeeee;
+}
+
+.foot-menu h4:hover {
+	box-shadow: 0px 0px 0px 15px #ffffff;
 }
