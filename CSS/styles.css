@@ -214,6 +214,7 @@ input[type="submit"] {
 .footer h5 {
 	font-family: 'Raleway', sans-serif;
 	font-size: 14px;
+	max-width: 50%;
 	color: #9a9a9a;
 }
 
